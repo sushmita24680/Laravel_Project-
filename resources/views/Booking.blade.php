@@ -2,12 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>* {
+<style>
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;}
 body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- background:url("manali.jpg") no-repeat;
+ background:url("/images/manali.jpg") no-repeat;
  background-size: cover;
  
 }
@@ -112,10 +113,10 @@ button:hover {
   
   margin-left: 23rem;
   margin-right: 15rem;
-  margin-top: -4.9rem;
-  background:linear-gradient(15deg,rgba(221, 190, 12, 0.883) 0%,rgba(6, 109, 6, 0.986)100%) ,transparent;
+  margin-top: -4.9rem;,rgba(6, 109, 6, 0.986)100%) ,transparent;
 
   
+  background:linear-gradient(15deg,rgba(221, 190, 12, 0.883) 0%
 
 }
 </style>
@@ -123,7 +124,7 @@ button:hover {
 <body>       
     
         <section>            
-        <nav id="background2">  <img src="../Main/logo1.png"/>
+        <nav id="background2">  <img src="/images/logo1.png"/>
         
         
 
@@ -205,7 +206,7 @@ button:hover {
 <script>
     function submitted(){
       alert('Thank you for choosing ! For further process we will contact you soon.');
-     setTimeout(function() {window.location = "../main.html" });
+     setTimeout(function() {window.location = "/main" });
     }
 </script>
 </body>

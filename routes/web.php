@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserAuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,15 +14,16 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return redirect('about');
+    return view('main');
 });
-
-Route::get('/about',function()
-{
-    return view('about');
-});
-
+Route::view('/manali-details','manali2');
+Route::view('/manali','Manali');
+Route::view('/manali-booking','Booking');
+Route::view('/aboutus','aboutus');
+Route::view('/feedback','feedback');
+Route::view('/contactus','contact');
+Route::view('/logind','signup');
+Route::view('/check-bookings','showbooking');
 Route::get("user/{id}",[UserController::class,'show']);
-Route::get('/user/{name}',function($name){
-    return view('users');
-});
+Route::get('/login',[UserAuthController::class,'authenti']);
+Route::post('create',[UserAuthController::class,'create'])->name('create');

@@ -5,53 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manali-booking site</title>
     <script src="https://kit.fontawesome.com/e16db2a88e.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="manali2.css" />
+<link rel="stylesheet" type="text/css"  href="{{ asset('css/manali2.css') }}"  />
+<link rel="stylesheet"  href="{{ asset('css/navigation.css') }}" />
 
 </head>
-<body >
-  <nav id="background2">
+<body ><nav id="background2">
    <div id="#logo"> 
-    <img src="../Main/logo1.png"/>
+    <img src="/images/logo1.png"/>
     </div>
            <div id="heading">
         <h3>WELCOME TO</h3>
         <h3><span>MANALI</span> - Tour Packages</h3></div>
-            <div id = "container">
-                
-                <ul>
-                    <a href="../main.html#background"><li>Home</li></a>
-                    <li>Custom Packages
-                      <ul>
-                    <li>Adventure
-                      <ul>
-                          <a href="Manali.html"><li>Manali</li></a>
-                    <li>Goa beach</li>
-                  </ul>
-                  </li>
-                  <li> Piligrams
-                      <ul>
-                          <li>KedarDham</li>
-                          <li>Buddha</li>
-                      </ul>
-                  <li>Heritage
-                      <ul>
-                          <li>Rajasthan</li>
-                          <li>Jabalpur</li>
-                          
-                      </ul>
-                  </li>
-                             
-                        </ul>
-                    </li>
-                  
-                    <a href="../main.html#aboutus"><li>About us</li></a>
-                    <a href="../main.html#contactus"><li>Contact us</li></a>
-                    <a href="../main/feedback.html"><li>Feedback</li></a>
-                </ul>
-            
-            </div>
-        
+  @include('navigation');         
        </nav>
+</nav>
+
+  
        <section id="page">
             <section id="sections" >
         <div id="info">
@@ -65,34 +34,34 @@
             <div class="mySlides fade">
                 
               <div class="numbertext">1 / 6</div>
-              <img src="leh-to-manali-hd.jpg" style="width:100%">
+              <img src="/images/leh-to-manali-hd.jpg" style="width:100%">
             
             </div>
             
             <div class="mySlides fade">
               <div class="numbertext">2 / 6</div>
-              <img src="parasuit.jpg" style="width:100%">
+              <img src="/images/parasuit.jpg" style="width:100%">
               
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">3 / 6</div>
-                <img src="manaliactivities.jpg" style="width:100%">
+                <img src="/images/manaliactivities.jpg" style="width:100%">
                
               </div>
               <div class="mySlides fade">
                 <div class="numbertext">4 / 6</div>
-                <img src="Basic-Mountaineering.jpg" style="width:100%">
+                <img src="/images/Basic-Mountaineering.jpg" style="width:100%">
                 
               </div>
               <div class="mySlides fade">
                 <div class="numbertext"> 5 / 6</div>
-                <img src="camping-package-tour-manali.jpg" style="width:100%">
+                <img src="/images/camping-package-tour-manali.jpg" style="width:100%">
                 
               </div>
             
             <div class="mySlides fade">
               <div class="numbertext">6 / 6</div>
-              <img src="manali2.jpg" style="width:100%">
+              <img src="/images/manali2.jpg" style="width:100%">
               
             </div>
             
@@ -140,7 +109,7 @@
             </div>
             <div id="mapframe">
               
-              <p id="payment">Per person : ₹21000/-</p>
+              <p id="payment">Per person : ₹6000/-</p>
           
                 <h1>Map</h1>
           <div id="map">  <button id="live"><i class="fas fa-eye">&nbsp;&nbsp;LIVE</button></i>
@@ -207,7 +176,7 @@
 
     
 </section>
-<a href="Booking.html"><button id="book">Book NOW</button></a> 
+<a href="/manali-booking"><button id="book">Book NOW</button></a> 
 
 
     <script>

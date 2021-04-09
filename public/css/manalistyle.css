@@ -8,60 +8,6 @@ html{
     scroll-behavior: smooth;
 }
 
-#container {
-    margin-left: 57rem;
-}
-#container ul{
-                list-style:none;
-                position: fixed;
-                
-            }
-
-            #container ul li{
-           
-                background:linear-gradient(15deg,rgba(240, 239, 238, 0.281) 0%,rgba(253, 255, 250, 0.281)100%) ,transparent;
-               padding-left: 15px;
-               padding-right:15px ;
-               margin-left: 7px;
-                border-radius: 20px;
-                box-shadow:   2px 3px gainsboro;
-                height: 50px;
-                line-height: 50px;
-                text-align: center;
-
-                float: left;
-                color:rgb(14, 13, 13);
-                font-size: 18px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-style: bold;
-                position:relative;
-            }
-            #container ul li:hover {
-                background-image:url('buttonsbk1.jpg');
-            color: whitesmoke;
-            }
-            
-            #container ul ul{
-                display:none;
-              
-            }
-            #container ul ul li{
-                width:120px;
-				margin-left:-12px;
-			
-            }
-            #container ul li:hover > ul{
-                display:block;
-                width:120px;
-                position:relative;
-                
-            }
-            #container ul ul ul{
-                margin-left:148px;
-                top:0px;
-				position: sticky;
-					 margin-top:-45px ;
-            }
 
             #background img{
                 margin-top: -3.1rem;
@@ -120,9 +66,9 @@ html{
     padding: 0 30px;
     line-height: 120px;
 }
-.cb-slideshow li:nth-child(1) span { background-image: url(manali.jpg) ;}
+.cb-slideshow li:nth-child(1) span { background-image: url(/images/manali.jpg) ;}
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(manali3.jpg);
+    background-image: url(/images/manali3.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -130,7 +76,7 @@ html{
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(manali2.jpg);
+    background-image: url(/images/manali2.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -138,7 +84,7 @@ html{
     animation-delay: 12s;
 }
 .cb-slideshow li:nth-child(4) span {
-    background-image: url(manalihotel.jpg);
+    background-image: url(/images/manalihotel.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -146,7 +92,7 @@ html{
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(camping-package-tour-manali.jpg);
+    background-image: url(/images/camping-package-tour-manali.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -154,7 +100,7 @@ html{
     animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(Basic-Mountaineering.jpg);
+    background-image: url(/images/Basic-Mountaineering.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
@@ -312,7 +258,7 @@ html{
 
 
 #open{
-	margin-left: 83.5rem;
+	margin-left: 80.8rem;
 	margin-top: -8rem;
 	position: absolute;
 	padding-left: 40px;

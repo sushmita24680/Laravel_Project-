@@ -132,17 +132,13 @@ margin-left: -0.42rem;
   color: #089508;
 }
 
-#wrapper .right .signup,
-#wrapper .right .login{
-  margin-top: 20px;
+#wrapper .right .signup_li,
+#wrapper .right .login_li{
+  margin-bottom: 20px;
 }
 
 #wrapper .right .input_field{
-  margin-bottom: 15px;
-  
-
-   
-
+  margin-bottom: 0.7rem;
 }
 
 #wrapper .right .input_field .input{
@@ -157,7 +153,7 @@ margin-left: -0.42rem;
    padding-left: 1rem;
    padding-right: 2rem;
   padding-top: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.7rem;
   color: black;
 
 }
@@ -200,7 +196,3 @@ button:focus{
    border: 3px solid rgb(70, 9, 99);
 }
 
-input_field i{
-  
-  
-}
