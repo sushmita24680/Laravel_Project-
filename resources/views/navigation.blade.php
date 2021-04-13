@@ -9,7 +9,7 @@
                 <li>Adventure
                 <ul>
                     <a href="/manali"><li>Manali</li></a>
-                    <li>Goa beach</li>
+                    <a href="/goa"><li>Goa beach</li></a>
                 </ul>
                 </li>
                 <li> Piligrams

@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserAuthController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingrController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,14 +19,27 @@ use App\Http\Controllers\UserAuthController;
 Route::get('/', function () {
     return view('main');
 });
+Route::post('/', [BookingrController::class,'Save1']) ;
+    
 Route::view('/manali-details','manali2');
 Route::view('/manali','Manali');
-Route::view('/manali-booking','Booking');
+
+Route::view('/goa','goa_beach');
+Route::view('/goa-details','goa2');
 Route::view('/aboutus','aboutus');
 Route::view('/feedback','feedback');
 Route::view('/contactus','contact');
 Route::view('/logind','signup');
 Route::view('/check-bookings','showbooking');
 Route::get("user/{id}",[UserController::class,'show']);
-Route::get('/login',[UserAuthController::class,'authenti']);
+Route::get('/login', function () {
+    return view('authenti');
+});
+Route::post('/login',[UserController::class,'login']);
+Route::get('/register', function () {
+    return view('authenti');
+});
+Route::post("/register",[UserController::class,'register']);
+Route::view('/manali-booking','Booking');
+Route::post("/submit",[BookingrController::class,'Save']);
 Route::post('create',[UserAuthController::class,'create'])->name('create');

@@ -90,10 +90,11 @@
         <br/>
         And checkout upcomming new packages with discount offers.
     </P>
-    <form>
+    <form action="/" method="POST">
+        @csrf
     <label for="email"></label>
-    <input type="email" placeholder="email" id="email" size="25" maxlength="40" />
-    <button>Submit</button>
+    <input type="email" placeholder="email" id="email" name="email" size="25" maxlength="40" />
+    <button type="submit">Submit</button>
 </form>
 </div>
 

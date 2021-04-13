@@ -76,12 +76,13 @@ $(".signup_li").click(function(){
             </div>
               
               <div class="login">
-                <form  action="">
+                <form  action="login" method="POST">
+                  @csrf
                 <div class="input_field">
-                  <input type="text" placeholder="E-mail" id="email1" class="input"><i class="fa fa-envelope"></i>
+                  <input type="email" name="email" placeholder="E-mail" id="email1" class="input"><i class="fa fa-envelope"></i>
                 </div>
                 <div class="input_field">
-                  <input type="password" placeholder="Password" id="password1" class="input"><i class="fa fa-key fa-lg"></i> 
+                  <input type="password" name="password" placeholder="Password" id="password1" class="input"><i class="fa fa-key fa-lg"></i> 
                 </div>
               
                   <button type="submit" class="btn"> Login</button>

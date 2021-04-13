@@ -131,28 +131,29 @@ button:hover {
 <h1 id="heading">Advance booking</h1></nav>
 </nav>
 <div class="contained">
-    <form onsubmit="return submitted()" >
+    <form action="submit" method="POST" >
+    @csrf
   <table>
       <tr>
           <td>
               <label for="fname">First Name</label>
-                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                 <input type="text" id="fname" name="fname" placeholder="Your name.." required>
 
           </td>
           <td>
                <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    <input type="text" id="lname" name="lname" placeholder="Your last name.." required>
 
           </td>
       </tr>
       <tr>
         <td>
            <label for="Email"> Email</label>
-    <input type="email" id="lname" name="Email" placeholder="Your email.." required> 
+    <input type="email" id="lname" name="email" placeholder="Your email.." required> 
         </td>
         <td>
             <label for="Phone no."> Phone number</label>
-            <input type="tel" id="Phonenumber" name="Phone Number" pattern="[0-9]{5}-[0-9]{5}" placeholder="00000-00000" required> 
+            <input type="text" id="phone" name="phone" required> 
         </td>
       </tr>
       <tr>
@@ -168,7 +169,7 @@ button:hover {
           </td>
           <td>
             <label for="country">Tour Package</label>
-            <select id="country" name="country" placeholder="Select" required>
+            <select id="country" name="package" placeholder="Select" required>
                 <option >Select</option>
                 <option >Manali</option>
               <option >Goa beach</option>
@@ -178,25 +179,25 @@ button:hover {
       <tr>
         <td>
             <label for="fname">Current Destination</label>
-               <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+               <input type="text" id="fname" name="current_destination" placeholder="Your name.." required>
 
         </td>
         <td>
              <label for="lname">Date for booking tour</label>
-             <input type="date" id="date" required>
+             <input type="date" id="date" name="date"  required>
 
         </td>
     </tr>
     <tr >
-            <td>Travelling Mode: </td> <tr><td ><input type="radio" class="mode"> Driving
-                <input type="radio" class="mode" > Biking</td>
-                <td >No. of people: <input type="number" min="0" id="age" required maxlength="3"></td>
+            <td>Travelling Mode: </td> <tr><td ><input type="radio" name="mode" class="mode"> Driving
+                <input type="radio" name="mode" class="mode" > Biking</td>
+                <td >No. of people: <input type="number" min="0" id="age" name="people" required maxlength="3"></td>
     </tr>
 </tr>
     <tr>
          </table>
     <label for="subject">Remarks</label>
-    <textarea id="subject" name="subject" placeholder="If any .." style="height:200px" ></textarea>
+    <textarea id="subject" name="remarks" name="remarks" placeholder="If any .." style="height:200px" ></textarea>
         </tr>
         
     <button value="submit"   >Submit</button>
