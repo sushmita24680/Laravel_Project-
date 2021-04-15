@@ -2,7 +2,7 @@
 <div id = "container">
             
     <ul>
-        <a href="/check-bookings"><li>Bookings</li></a>
+        <a href="/show-booking"><li>Bookings</li></a>
         <a href="/"><li>Home</li></a>
         <li>Custom Packages
             <ul>
@@ -32,8 +32,14 @@
         <a href="/aboutus"><li>About us</li></a>
         <a href="/contactus"><li>Contact us</li></a>
        <a href="/feedback"><li >Feedback</li></a>
-       <a href="/login"><li >Login</li></a>
+     
+       @if(Session::has('user'))
+      <a href="/logout"><span class="hidden-xs"><li >Logout</li></span></a>
+      
+       @else
+      <a href="/login"><span class="hidden-xs"><li >Login</li></span></a>
        
+       @endif
     </ul>
 </div>
         

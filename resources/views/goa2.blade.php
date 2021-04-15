@@ -176,7 +176,7 @@
 
     
 </section>
-<a href="/manali-booking"><button id="book">Book NOW</button></a> 
+<a href="/booking"><button id="book">Book NOW</button></a> 
 
 
     <script>

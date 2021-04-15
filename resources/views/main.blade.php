@@ -3,16 +3,24 @@
 
 <body><div id="cover" ></div>  
     <section id="body">
+        
    
 <section id ="background">
     <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
     <nav id="background2">  <img src="/images/logo1.png"/>
     @include('navigation')
     </nav>
-     
+    <div id="welcome"> <h3><img src="/images/namaste.png" style="height:30px; width:40px;">
+       Namaste
+        @if(Session::has('user'))
+        {{Session::get('user')['name']}}
+       
+        @endif</h3> 
+    </div >
 
     <div id="heading">
         <!-- <img src="png-hINDIacover.png"/> -->
+       
         <h3> WELCOME TO |  INCREDIBLE</h3>
         <h1>INDIA</h1>
         <br/>

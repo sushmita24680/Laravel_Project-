@@ -15,6 +15,7 @@ class UserAuthController extends Controller
 
     function create(Request $req){
         $req->validate([
+            
             'name'=>'required',
             'email'=>'required|email|unique:users',
             'password'=>'required|min:7|max:12  '

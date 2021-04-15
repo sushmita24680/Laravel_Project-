@@ -7,6 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Booking extends Model
 {
-   protected $table='booking';
+
+   use HasFactory;
+   protected $table='bookings';
+
+   function getids(){
+      return $this->hasMany('App\Models\User');
+   }
+
    
+
 }

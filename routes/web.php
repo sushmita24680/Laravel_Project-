@@ -19,7 +19,7 @@ use App\Http\Controllers\BookingrController;
 Route::get('/', function () {
     return view('main');
 });
-Route::post('/', [BookingrController::class,'Save1']) ;
+
     
 Route::view('/manali-details','manali2');
 Route::view('/manali','Manali');
@@ -30,8 +30,10 @@ Route::view('/aboutus','aboutus');
 Route::view('/feedback','feedback');
 Route::view('/contactus','contact');
 Route::view('/logind','signup');
-Route::view('/check-bookings','showbooking');
-Route::get("user/{id}",[UserController::class,'show']);
+
+Route::view('booking','Booking');
+Route::post('/booking',[BookingrController::class,'add']);
+Route::get('show-booking',[BookingrController::class,'show']);
 Route::get('/login', function () {
     return view('authenti');
 });
@@ -41,5 +43,10 @@ Route::get('/register', function () {
 });
 Route::post("/register",[UserController::class,'register']);
 Route::view('/manali-booking','Booking');
-Route::post("/submit",[BookingrController::class,'Save']);
+
 Route::post('create',[UserAuthController::class,'create'])->name('create');
+Route::get('/logout', function () {
+    session()->forget('user');
+      return redirect('/');
+      
+  });
