@@ -18,8 +18,10 @@ class UserAuthController extends Controller
             
             'name'=>'required',
             'email'=>'required|email|unique:users',
-            'password'=>'required|min:7|max:12  '
+            'password'=>['required','min:7','max:12','regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/',
+            'confirmed ']
         ]);
+        
     }
 
 }

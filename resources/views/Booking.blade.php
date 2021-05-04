@@ -41,7 +41,7 @@
         </td>
         <td>
             <label for="Phone no."> Phone number</label>
-            <input type="text" id="phone" name="phone" required> 
+            <input type="tel" pattern="00000-00000" id="phone" name="phone" required> 
         </td>
       </tr>
       <tr>
@@ -71,9 +71,9 @@
 
         </td> 
         <td>
-             <label for="lname">Date for booking tour</label>
-             <input type="date" id="date" name="date"  required>
-
+             <label for="lname">Date for booking tour </label>
+             <input type="date" id="date" name="date" min="<?= date('Y-m-d', time()+86400+86400); ?>"  required>
+         
         </td>
     </tr>
     <tr >
@@ -83,7 +83,8 @@
                 <span style="color:red;">@error('travelling_mode'){{$message}}@enderror</span>
                 </td>
                 
-                <td >No. of people: <input type="number" min="0" id="age" name="people" required maxlength="3">
+                <td >No. of people: <input type="number" min="0" max="15" id="age" name="people" required maxlength="3">
+                
             </td>
     </tr>
 </tr>

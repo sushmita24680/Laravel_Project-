@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserAuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingrController;
+use App\Http\Controllers\feedbackController;
+use Illuminate\Contracts\Session\Session;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +22,8 @@ use App\Http\Controllers\BookingrController;
 Route::get('/', function () {
     return view('main');
 });
-
-    
+Route::post('/', [BookingrController::class,'Save1']) ;
+Route::post('/feedbacks', [feedbackController::class,'fback']) ; 
 Route::view('/manali-details','manali2');
 Route::view('/manali','Manali');
 

@@ -176,7 +176,16 @@
 
     
 </section>
-<a href="/booking"><button id="book">Book NOW</button></a> 
+
+        <a href="/booking"><button id="book">Book NOW</button></a> 
+         
+ 
+
+
+
+
+ 
+
 
 
     <script>

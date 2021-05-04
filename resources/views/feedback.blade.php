@@ -14,8 +14,9 @@
 
 <h3 id="heading">Feedback Form</h3></nav>
 
-<div class="contained">
-  <form onsubmit="return submitted()" >
+<div class="contained"> 
+<form action="/feedbacks" method="POST">
+        @csrf
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 

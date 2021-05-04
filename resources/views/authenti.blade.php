@@ -85,8 +85,8 @@ $(".signup_li").click(function(){
                   <input type="password" name="password" placeholder="Password" id="password1" class="input"><i class="fa fa-key fa-lg"></i> 
                 </div>
               
-                  <button type="submit" class="btn"> Login</button>
-              </a>
+                 <button type="submit" class="btn"> Login</button>
+              
             </form>
             </div>
           </div>

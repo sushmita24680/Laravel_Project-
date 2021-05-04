@@ -38,18 +38,19 @@
   <tbody>
   @foreach($bookings as $booking )
 <tr>
-        <th scope="row">{{$booking['id']}}</th>
-        <td>{{$booking['fname']}}</td>
-        <td>{{$booking['lname']}}</td>
-        <td>{{$booking['email']}}</td>
-        <td>{{$booking['phone']}}</td>
-        <td>{{$booking['country']}}</td>
-        <td>{{$booking['package']}}</td>
-        <td>{{$booking['current_destination']}}</td>
-        <td>{{$booking['date']}}</td>
-        <td>{{$booking['travelling_mode']}}</td>
-        <td>{{$booking['people']}}</td>
-        <td>{{$booking['remarks']}}</td>
+ 
+        <th scope="row">{{$loop->iteration}}</th>
+        <td>{{$booking->fname}}</td>
+        <td>{{$booking->lname}}</td>
+        <td>{{$booking->email}}</td>
+        <td>{{$booking->phone}}</td>
+        <td>{{$booking->country}}</td>
+        <td>{{$booking->package}}</td>
+        <td>{{$booking->current_destination}}</td>
+        <td>{{$booking->date}}</td>
+        <td>{{$booking->travelling_mode}}</td>
+        <td>{{$booking->people}}</td>
+        <td>{{$booking->remarks}}</td>
 </tr>
 @endforeach
   </tbody>

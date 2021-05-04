@@ -22,6 +22,7 @@ class UserController extends Controller
         }
         else{
             $req-> session()->put('user',$user);
+            $req-> session()->put('alert',$user);
             return redirect('/');
         }
     }
@@ -34,7 +35,7 @@ class UserController extends Controller
         $user->password=Hash::make($req->password);
         
         $user->save();
-       return redirect('/');
+      
 
     }
 
