@@ -1,6 +1,6 @@
 @extends('mainlayout');
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
 </head>
 
 <body style=" background: linear-gradient(15deg,rgba(138, 135, 135, 0.882) 0%,rgba(138, 135, 135, 0.507)100%),url('/images/torismcover.jpg') center no-repeat;
@@ -9,14 +9,14 @@
     <section id='showbooking'>
     <nav id="background2">  <img src="/images/logo1.png"/>
     <div id = "container">
-            
-    <ul style="margin-left:35rem;">
+
+    <ul style="margin-left:48rem;margin-top:3rem">
         <a href="/"><li><- back</li></a>
         </ul>
         </div>
        <h3>Booked Slots</h3>
 
-     
+
 </nav>
 <table class="table table-bordered table-dark">
   <thead>
@@ -33,12 +33,13 @@
         <th scope="col">Medium</th>
         <th scope="col">People</th>
         <th scope="col">Remarks</th>
+        <th scope="col">Cancellation</th>
 </tr>
   </thead>
   <tbody>
   @foreach($bookings as $booking )
 <tr>
- 
+
         <th scope="row">{{$loop->iteration}}</th>
         <td>{{$booking->fname}}</td>
         <td>{{$booking->lname}}</td>
@@ -51,6 +52,7 @@
         <td>{{$booking->travelling_mode}}</td>
         <td>{{$booking->people}}</td>
         <td>{{$booking->remarks}}</td>
+        <td ><a href={{ "delete/" }}><button type="button" class="btn btn-dark"  style="inline-padding:20px !important; background-color:red">Cancel</button></a></td>
 </tr>
 @endforeach
   </tbody>

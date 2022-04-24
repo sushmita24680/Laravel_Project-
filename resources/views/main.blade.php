@@ -1,12 +1,12 @@
 @extends('mainlayout')
 </head>
 
-<body><div id="cover" ></div>  
+<body><div id="cover" ></div>
     <section id="body">
-        
-   
+
+
 <section id ="background">
-    <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>    
+    <marquee class="ad" style = "border:2px deeppink solid ;background-color:deeppink; color:ghostwhite;" behavior ="alternate"><b>welcome to ₹BHARAT@Yatra.com - TourtoIndia</b></marquee>
     <nav id="background2">  <img src="/images/logo1.png"/>
     @include('navigation')
     </nav>
@@ -14,18 +14,18 @@
        Namaste
         @if(Session::has('user'))
         {{Session::get('user')['name']}}
-       
-        @endif</h3> 
+
+        @endif</h3>
     </div >
 
     <div id="heading">
         <!-- <img src="png-hINDIacover.png"/> -->
-       
+
         <h3> WELCOME TO |  INCREDIBLE</h3>
         <h1>INDIA</h1>
         <br/>
         <!-- <h4>&#8964;</h4> -->
-        
+
     </div >
     <div class="open">
         <a href="#box"> <button id="open" >^<br/>Open</button></a>
@@ -38,10 +38,10 @@
         <br/>
         <h1>Welcome to ₹BHARAT@Yatra.com ! </h1>
         <p>
-      Here, you will find various hoildays packages which will take you to tirth yatra, adventure trip ,seaside, heritage places 
-      etc. So, that you can view our incredible India from closure side. As, due to COVID-19 there might be chances of attack of virus so, we have ensured your safety through introducing anti-covid packages in all which include 
+      Here, you will find various hoildays packages which will take you to tirth yatra, adventure trip ,seaside, heritage places
+      etc. So, that you can view our incredible India from closure side. As, due to COVID-19 there might be chances of attack of virus so, we have ensured your safety through introducing anti-covid packages in all which include
       pre-screening in every stop of trip, mask,sanitizer,hand gloves etc., and first aid kit.So, that you can enjoy your trip safely and happily.
-       
+
         </p>
         <br/>
     </div>
@@ -53,7 +53,7 @@
       All Travelers must have COVID-19 test certification
       Identification proof like pancard , adhaarcard etc.
       Travalling form which will be mailed by our service team respectively.
-      
+
 
         </p>
         <br/>
@@ -63,19 +63,19 @@
 <!-- <section id="packwithsub"> -->
     <div id="offers"><h1>Offers:</h1></div>
 <section class="packages">
-    
+
     <div class="packageone">
           <div class="offer"> <img src="/images/offersticker.png"/> <div class="discount"><p>10%</p></div></div>
           <h1> Kedhar Dham </h1>
-     
+
         <img class="pic" src="/images/kedarnath_3.jpg"/>
         <p>Kedarnath is a holy Hindu town located in Rudraprayag district of Uttarakhand in India. It is one of the Char Dhams located in the Himalayas</p>
         <button>BOOK NOW</button>
 
     </div>
-    
+
      <div class="packageone">
-        <div class="offer"> <img src="/images/offersticker.png"/> <div class="discount"><p style="padding-left:5rem ;"> 5%</p></div></div> 
+        <div class="offer"> <img src="/images/offersticker.png"/> <div class="discount"><p style="padding-left:5rem ;"> 5%</p></div></div>
         <h1>Goa Beach</h1>
          <img class="pic" src="/images/beach_in_Goa_1511335579.webp"/>
         <p>Goa, is the perfect destination for a refreshing break
@@ -87,7 +87,16 @@
         <h1>City Of Marbles</h1>
         <img class="pic" src="/images/Jabalpur.jpg"/>
         <p>City of Marbles(Jabalpur) stepped to ancient places and nature charm - Madan Mahal Fort, Gwari Ghat, Tilwara Ghat, Dhuandhar Waterfalls  and many more.</p>
-        <button>BOOK NOW</button>    
+        <button>BOOK NOW</button>
+    </div>
+    <div class="packageone">
+          <div class="offer"> <img src="/images/offersticker.png"/> <div class="discount"><p>7%</p></div></div>
+          <h1> Bodh Gaya </h1>
+
+        <img class="pic" src="/images/bodh_gaya.jpg"/>
+        <p>Bodh Gaya is a religious site and place of pilgrimage associated with the Mahabodhi Temple Complex in Gaya district in the Indian state of Bihar. </p>
+        <button>BOOK NOW</button>
+
     </div>
 <!-- </section>
 <section class="subscribe"> -->
@@ -101,7 +110,7 @@
     <form action="/" method="POST">
         @csrf
     <label for="email"></label>
-    <input type="email" placeholder="email" id="email" name="email" size="25" maxlength="40" />
+    <input type="email" placeholder="Email" id="email" name="email" size="20" maxlength="40" />
     <button type="submit">Submit</button>
 </form>
 </div>
@@ -110,14 +119,14 @@
 <section id="aboutus">
     <h1>About us</h1>
    <p> <b>Bharat@yatra.com- Tour to India </b>is a tour and traveling site. We full fill the needs of those people who are planning a trip to historical places, adventures, and pilgrims in India.
-As we all knew that India is an increx  dible country and every single place has its specialty in it. And, due to which it attracts lots of tourists. But, the benefit of choosing our site is you will find a package at a reasonable rate with some discount, historical magazine containing story which becomes a reason for the popularity of that area and entertainment. 
+As we all knew that India is an increx  dible country and every single place has its specialty in it. And, due to which it attracts lots of tourists. But, the benefit of choosing our site is you will find a package at a reasonable rate with some discount, historical magazine containing story which becomes a reason for the popularity of that area and entertainment.
 <br/><br/>
     We will provide great experience and adventure on selecting any tour Packages with a covid safety kit. Our theme is to show <b>"Incredible Tradition and Culture of India"</b>.
     <br/><br/>
     We will introduce every tradition and culture of the selected destination and conduct some exciting events for you to make your entire trip memorable and beautiful.
     <br/><br/>
     Our team consists of highly accomplished and experienced adventurers who have done anything that one could imagine from traveling to the North and South Poles.
-    </p> 
+    </p>
 </section>
 
 
@@ -138,16 +147,16 @@ As we all knew that India is an increx  dible country and every single place has
                  <h3>servicecenterbharat@yatra.com</h3>
                  </div>
         </li>
-        <li>    <div class="contactusbox">  
+        <li>    <div class="contactusbox">
                <h3> Head Office</h3>
                 <p>BharatYatra Network Private Limited Gulf Adiba,
                      Plot No. 272, Phase II, Sector 20, Gurugram, Haryana 122008
-                 
+
                 </p></div>
-                
+
         </li>
-    </ul> 
-    
+    </ul>
+
 </div>
               <div class="icon-bar">
 			<a href='https://www.facebook.com' class='facebook' target='_blank'>
@@ -156,7 +165,7 @@ As we all knew that India is an increx  dible country and every single place has
 			<a href='https://www.twitter.com' class='twitter' target='_blank'>
 				click here to visit<i class=" fab fa-twitter"></i>
 			</a>
-			
+
 			<a href='https://www.instagram.com' class='instagram' target='_blank'>
 				click here to visit<i class="fab fa-instagram"></i>
 			</a>
@@ -169,12 +178,13 @@ As we all knew that India is an increx  dible country and every single place has
         </div>
 </section>
 <section class="footer">
-       <div ><P>&COPY; 2021 BharatYatra Network Private Limited . All rights reserved.</P></div>
+
+<div ><P>&COPY; 2021 BharatYatra Network Private Limited . All rights reserved.</P></div>
 </section>
 
-   
-    
+
+
 </body>
- 
+
 
 </html>

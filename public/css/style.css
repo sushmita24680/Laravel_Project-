@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-      box-sizing: border-box; 
-      
+      box-sizing: border-box;
+
     }
 html{
     scroll-behavior: smooth;
@@ -12,23 +12,23 @@ body{
 }
 #background{
     width: 100%;
-    height: 44rem;
-    
-    background: linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507)100%),url("/images/torismcover.jpg") center no-repeat;
+    height: 85%;
+
+    background: linear-gradient(15deg,rgba(255, 255, 251, 0.082) 0%,rgba(255, 255, 255, 0.507) 100%),url("/images/torismcover.jpg") center no-repeat;
     background-size: cover;
     background-position: fixed;
     position: relative;
     box-shadow: 0px 0px 40px 15px rgba(30, 163, 7, 0.801) ;
-    
+
 }
 #background2{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
      margin-top: 0.4rem;
 }
 
  #background2 img{
-    
+
     margin-top:-3rem;
     margin-right: -4rem;
     top:0;
@@ -60,7 +60,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
-  
+
 }
 
 #welcome h3{
@@ -77,8 +77,8 @@ body{
                 /*  align-items: center; */
                 /* justify-content: center; */
                 position:initial;
-                
-                
+
+
             }
 
             #heading h1{
@@ -87,7 +87,7 @@ body{
                 text-align: center;
                 top: 0;
                 color:#4e3418;
-                
+
                 /* margin-top: -10px; */
                 padding-top:28px;
                 margin-left: -26px;
@@ -98,8 +98,8 @@ body{
             #heading h3{
                 font-family:Arial, Helvetica, sans-serif;
                 font-size:25px;
-                 text-align: center; 
-                
+                 text-align: center;
+
                 margin-top: 149px;
                 color:#4e3418;
                 margin-left: -50px;
@@ -115,10 +115,9 @@ body{
 
 
             .open{
-                 margin-left: 46%; 
+                 margin-left: 46%;
                 /* justify-content: center; */
-                margin-top: -4.2rem;
-                
+                margin-top: -5.5rem;
             }
 
             #open{
@@ -136,9 +135,9 @@ body{
             }
             .open a{
                 text-decoration: none;
-                
-            
-                
+
+
+
             }
 
             #open:hover{
@@ -148,7 +147,7 @@ body{
     display: block;
     padding-left: 20px;
     margin: 3rem;
-   
+
 
 }
 
@@ -174,7 +173,7 @@ body{
     display: block;
     padding-left: 20px;
     margin: 3rem;
-   
+
 
 }
 
@@ -207,12 +206,12 @@ body{
 }
 .packages{
     display:flex;
-     flex-direction: row; 
+     flex-direction: row;
     /* box-sizing: border-box;  */
     flex-wrap:wrap;
     margin-left: 2rem;
     margin-right: 2rem;
-    
+
 }
 #offers{
     margin:2rem ;
@@ -225,20 +224,20 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      color: rgba(236, 8, 8, 0.63);
      text-shadow:  #200303 0.15px 2px 2.5px;
-     
-   
+
+
 }
 
 
 .packageone{
  display: block;
- /* flex: 20%; */ 
+ /* flex: 20%; */
  /* grid-template-rows: fit-content(150px) fit-content(150) fit-content(40) 1.5fr; */
  box-sizing:content-box;
  /* border:7px solid rgb(255, 255, 255) ; */
  box-shadow: 5px 10px #888888;
  border-radius: 45px;
- background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603)100%) ,url("/images/buttonsbk1.jpg") center transparent;
+ background:linear-gradient(108deg,rgba(20, 7, 77, 0.7) 0%,rgba(141, 25, 122, 0.603) 100%) ,url("/images/buttonsbk1.jpg") center transparent;
  font-family: Arial, Helvetica, sans-serif;
  /* margin:20px; */
  height: 30rem;
@@ -248,37 +247,37 @@ body{
  text-align: center;
  /* width: 20vh; */
  color: white;
- 
+margin-left:1.5%;
  margin-bottom: 40px;
 
 }
 
 .packageone h1{
     padding-top: 1rem;
-    
+
     font-family: cursive;
     text-shadow: 2px 4px rgba(196, 211, 211, 0.452);
-    
+
 }
 .packageone .offer{
     width: 2px;
     height: 2px;
     transform: scale(0.101);
-    margin-left: 12.6rem;
+    margin-left: 11.9rem;
     z-index: 2;
     margin-top: -4px;
-    
- 
+
+
 
 }
 .packageone .discount{
-   
-   
+
+
     font-weight: bold;
     font-size: 10rem;
     margin-top: -30rem;
-    margin-left: 15rem;
-    
+    margin-left: 25rem;
+
 }
 
 .packageone .pic{
@@ -286,7 +285,7 @@ body{
     /* text-align: center; */
     /* align-self: center; */
     margin-top: 15px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     width: 16.025rem;
     /* border-style:solid; */
     /* border-radius: 20px ; */
@@ -330,7 +329,7 @@ body{
 }
 
 #subscriber{
-    margin-left: 4em;
+    margin-left: 3em;
     background-color:white ;
     border-radius:10px ;
     padding:2em;
@@ -339,8 +338,8 @@ body{
     text-align:center;
     box-shadow: 8px 10px 18px 3px rgba(139, 141, 148, 0.829);
     padding-bottom: 4em;
-    width: 24em;
-    height: 30em;
+    width: 30%;
+    height: 25%;
     box-sizing:border-box;
 
 }
@@ -368,6 +367,8 @@ body{
    width: 18rem;
    height: 3rem;
    font-size: 30px;
+   padding-inline:1rem ;
+   font-size:medium;
 }
 
 #subscriber button{
@@ -381,13 +382,13 @@ body{
 }
 #subscriber button:hover{
     transform: scale(1.15);
-}  
+}
 
 #aboutus{
  margin:3em;
  /* transform: ; */
  padding:1rem;
- background: linear-gradient(108deg,rgba(245, 245, 248, 0.212) 0%,rgba(255, 253, 255, 0.603)100%);
+ background: linear-gradient(108deg,rgba(245, 245, 248, 0.212) 0%,rgba(255, 253, 255, 0.603) 100%);
 }
 
 #aboutus h1{
@@ -399,7 +400,7 @@ body{
     margin-bottom: 1em;
     font-weight:bold;
     /* font-stretch:narrower; */
-    
+
     text-shadow: #181616 0.15px 2px 2.5px;
     }
     #aboutus p{
@@ -410,20 +411,19 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 22px;
         color:rgb(59, 57, 57);
-        
+
     padding-left:15px;
     border-left: 12px solid red;
     }
     #cont{
-        background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5)100%) ,url("/images/contactus.jpg") no-repeat transparent;
-       background-size: cover; 
+        background:  linear-gradient(108deg,rgba(50, 50, 51, 0.5) 0%,rgba(126, 131, 79, 0.5) 100%) ,url("/images/contactus.jpg") no-repeat transparent;
+       background-size: cover;
        width: 100%;
-       height: 43%;
+       height: 40%;
+        padding-top: 4rem;
     }
     #contactus{
-    
-       
-      
+
        padding-top: 1rem;
        margin-left: 4rem;
        color: white;
@@ -432,7 +432,7 @@ body{
        display: flex;
        flex-direction: column;
        padding-bottom: 5rem;
-      
+
     }
     #contactus ul{
        list-style: none;
@@ -441,21 +441,22 @@ body{
     }
 
     #contactus ul li{
-       text-align:center; 
+       text-align:center;
        float: left;
        padding-top:2rem ;
-       margin-left: 6rem; 
+       margin-left: 8rem;
        width: 22%;
-       
-    }   
+
+
+    }
     .footer{
-        
+
         text-align: center;
         bottom: 0;
         height:10px;
         position: relative;
-    }                                
-    
+    }
+
 
 
 
@@ -466,14 +467,14 @@ body{
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
     z-index: 50;
-   
-    
+
+
 }
 
 .icon-bar a {
 	text-decoration: none;
 	width: 210px;
-	
+
 	color: #fff;
     display: flex;
     border-radius: 15px;
@@ -487,15 +488,15 @@ body{
 	-ms-transform: translateX(-140px);
 	transition: all 0.5s linear;
 	-webkit-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;  
- 
+    -ms-transition: all 0.5s linear;
+
 }
 #icon:hover{
     color: white;
 }
 .icon-bar .facebook:hover {
     background: #3b5998;
-    
+
 }
 
 
@@ -506,7 +507,7 @@ body{
 
 .icon-bar .instagram:hover {
     background: #e4405f;
-   
+
 }
 
 .icon-bar .youtube:hover{
@@ -518,8 +519,8 @@ body{
 }
 
 
-   
-    
+
+
 
 
 .icon-bar a i {
@@ -550,4 +551,3 @@ a:hover {
     color: white ;
   }
   /* FEEDBACK */
-  

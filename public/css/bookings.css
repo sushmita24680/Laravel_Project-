@@ -6,31 +6,32 @@
 body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  background:url("/images/manali.jpg") no-repeat;
  background-size: cover;
- 
+
 }
 
 #background2{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
      margin-top: 0.4rem;
      margin-bottom: 2rem;
-    
+     
+
 }
 
 
             #background2 img{
-             margin-top: -3rem;   
+             margin-top: -3rem;
                top:0;
                 margin-left: 1rem;
                 position: relative;
                 width: 200px;
                 z-index: 100;
-                
+
             }
 
             #heading{
-   
-    
+
+
     padding-left: 20px ;
     border-left:5px solid rgb(255, 255, 255) ;
     color: rgb(255, 255, 255);
@@ -61,10 +62,10 @@ input[type=text],input[type=number],input[type=date ] ,input[type=tel],input[typ
 		outline-offset: 0px;
         outline: none;
         color:black;
-    
-  } 
-  
-  
+
+  }
+
+
 
 
 input[type=radio]{
@@ -77,16 +78,16 @@ input[type=radio]{
 table td {
    padding-right:60px;
    padding-left: 10px;
-   
+
 }
 
 textarea{
-    
+
     width:690px;
 }
 
 button {
-  background-color: #9e0d49;
+  background-color: #760d12;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -97,7 +98,7 @@ button {
 }
 
 button:hover {
-  background-color: #790808;
+  background-color: #b31119;
 }
 
 .contained{
@@ -106,11 +107,11 @@ button:hover {
   color:rgb(248, 248, 251);
   padding: 20px;
   padding-left: 4rem;
-  
-  margin-left: 23rem;
+
+  margin-left: 28%;
   margin-right: 15rem;
-  margin-top: -4.9rem;  
-  background:linear-gradient(15deg,rgba(58, 80, 36, 0.74) 0%,rgba(121, 194, 13, 0.966)100%) ,transparent;
+  margin-top: -2rem;
+  background:linear-gradient(15deg,rgba(58, 80, 36, 0.74) 0%,rgba(121, 194, 13, 0.966) 100%) ,transparent;
 
 }
 

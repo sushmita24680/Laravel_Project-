@@ -23,7 +23,7 @@ Route::get('/', function () {
     return view('main');
 });
 Route::post('/', [BookingrController::class,'Save1']) ;
-Route::post('/feedbacks', [feedbackController::class,'fback']) ; 
+Route::post('/feedbacks', [feedbackController::class,'fback']) ;
 Route::view('/manali-details','manali2');
 Route::view('/manali','Manali');
 
@@ -32,24 +32,26 @@ Route::view('/goa-details','goa2');
 Route::view('/aboutus','aboutus');
 Route::view('/feedback','feedback');
 Route::view('/contactus','contact');
-Route::view('/logind','signup');
+Route::view('/login','signup');
 
 Route::view('booking','Booking');
+
+
 Route::post('/booking',[BookingrController::class,'add']);
 Route::get('show-booking',[BookingrController::class,'show']);
 Route::get('/login', function () {
     return view('authenti');
 });
 Route::post('/login',[UserController::class,'login']);
-Route::get('/register', function () {
+Route::get('/login', function () {
     return view('authenti');
 });
-Route::post("/register",[UserController::class,'register']);
+Route::post("/",[UserController::class,'register']);
 Route::view('/manali-booking','Booking');
 
 Route::post('create',[UserAuthController::class,'create'])->name('create');
 Route::get('/logout', function () {
     session()->forget('user');
       return redirect('/');
-      
+
   });
